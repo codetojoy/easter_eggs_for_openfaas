@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  openfaas-hello-groovy:
+    lang: dockerfile
+    handler: ./openfaas-hello-groovy
+    image: codetojoy/openfaas-hello-groovy
